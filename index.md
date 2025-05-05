@@ -34,7 +34,7 @@ Curated list of SQL interview questions by Leetcode from 'Easy' to 'Hard'. Cover
 
 [![](https://img.shields.io/badge/PostgreSQL-white?logo=postgresql&logoColor=336791)](#)
 
-[View code on Github]([https://github.com/lhm2904/Data-Analyst-Postings-Analysis/blob/main/Project%20Report.md](https://github.com/lhm2904/SQL50/tree/main))
+[View code on Github](https://github.com/lhm2904/SQL50/tree/main)
 
 ---
 

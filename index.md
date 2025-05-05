@@ -1,14 +1,14 @@
-## Selected projects in data science, machine learning and NLP
+## Projects and exercises
 
 ---
 
-### Deep NLP for hate speech detection
+### Data analyst job postings analysis
 
-Hate speech detection is the automated task of determining whether a piece of text contains hateful content. In this project, I built a classifier using PyTorch to fine-tune a BERT model.
+Analysis of data analyst job postings from 2023 to 2024 to uncover insights in salaries, skills, platforms, companies, and market demand. 
 
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/Twitter-white?logo=Twitter)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#)
+[![](https://img.shields.io/badge/PostgreSQL-white?logo=postgresql&logoColor=336791)](#) [![](https://img.shields.io/badge/Excel-white?logo=microsoft-excel&logoColor=207346)](#) [![](https://img.shields.io/badge/Lucid-white?logo=lucid&logoColor=FF6C37)](#) [![](https://img.shields.io/badge/GitHub-white?logo=github&logoColor=181717)](#)
 
-[View code on Colab](https://colab.research.google.com/drive/1d_q0vUpgwmbN7imUcdsbuDwJ61OuBjvO?usp=sharing)
+[View report](https://github.com/lhm2904/Data-Analyst-Postings-Analysis/blob/main/Project%20Report.md)
 
 ---
 

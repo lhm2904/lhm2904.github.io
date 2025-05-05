@@ -1,5 +1,3 @@
-## Matt Chapman's data science and ML portfolio project
+## My portfolio website to display projects and exercises
 
-Based on a Minimal Jekyll theme for GitHub Pages [1].
-
-[1] Jekyll theme "Minimal" for GitHub Pages: https://github.com/pages-themes/minimal (CC0 1.0 Universal License)
+Using Minimal Jekyll theme for GitHub Pages

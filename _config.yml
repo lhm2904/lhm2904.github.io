@@ -4,7 +4,14 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br>
   International Business student at the University of Economics Ho Chi Minh City. This portfolio showcases my work as I transition into the field of data analytics.
   <br><br>
-  Email: minhlhoangvn@gmail.com
+  <strong>Email:</strong> <span id="email">minhlhoangvn@gmail.com</span>
+  <button onclick="copyEmail()" style="margin-left: 5px;">Copy</button>
+  <script>
+    function copyEmail() {
+      const emailText = document.getElementById("email").innerText;
+      navigator.clipboard.writeText(emailText);
+    }
+  </script>
   <br><br>
   <a href="https://raw.githubusercontent.com/lhm2904/lhm2904.github.io/c130cbb8583f3276bb66f4602e071206f9da4300/pdf/LuongHoangMinh_CV.pdf">Download my resume</a>
   

@@ -4,7 +4,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br>
   International Business student at the University of Economics Ho Chi Minh City. This portfolio showcases my work as I transition into the field of data analytics.
   <br><br>
-  <strong>Email:</strong> <span id="email">minhlhoangvn@gmail.com</span>
+  Email: <span id="email">minhlhoangvn@gmail.com</span>
   <button onclick="copyEmail()" style="margin-left: 5px;">Copy</button>
   <script>
     function copyEmail() {

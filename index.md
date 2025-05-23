@@ -15,9 +15,9 @@ Analysis of data analyst job postings from 2023 to 2024 to uncover insights in s
 
 ---
 
-### AdventureWork Sales Dashboard
+### AdventureWork sales dashboard
 
-Dashboard created with Microsoft's official sample dataset - AdventureWorks, which covers sales, customers, location, products and more. The dashboard tracks key performance indicators, revenue and product trends, list important clients, and compare regional performances.
+Dashboard created with Microsoft's official sample dataset - AdventureWorks, which covers sales, customers, location, products and more. The dashboard tracks key performance indicators, revenue and product trends, lists important clients, and compares regional performances.
 
 <img src="images/adventureworks.jpg?raw=true"/>
 

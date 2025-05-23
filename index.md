@@ -28,9 +28,9 @@ Dashboard created with Microsoft's official sample dataset - AdventureWorks, whi
 
 ---
 
-### SQL50 interview questions
+### SQL50 practice
 
-Curated list of SQL interview questions by Leetcode from 'Easy' to 'Hard'. Covers various topics from joins, grouping, subqueries, to regex and window functions.
+Curated list of SQL questions on Leetcode. Covers various topics from joins, grouping, subqueries, to regex and window functions.
 
 [![](https://img.shields.io/badge/PostgreSQL-white?logo=postgresql&logoColor=336791)](#)
 

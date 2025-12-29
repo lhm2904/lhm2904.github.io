@@ -1,15 +1,31 @@
-title: Luong Hoang Minh # your name (or website title) here
-logo: "/images/pfp2.jpg?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
+title: Luong Hoang Minh
+logo: "/images/pfp2.jpg?raw=true"
+description: >
   <br>
   International Business student at the University of Economics Ho Chi Minh City. This portfolio showcases my work as I transition into the field of data analytics.
   <br><br>
   Email: <span id="email">minhlhoangvn@gmail.com</span>
-  <button onclick="copyEmail()" style="margin-left: 5px;">Copy</button>
+  <button id="copyBtn" onclick="copyEmail()" style="margin-left: 5px; transition: all 0.3s ease;">Copy</button>
+  
   <script>
     function copyEmail() {
       const emailText = document.getElementById("email").innerText;
-      navigator.clipboard.writeText(emailText);
+      const btn = document.getElementById("copyBtn");
+      
+      navigator.clipboard.writeText(emailText).then(() => {
+        const originalText = btn.innerText;
+        const originalColor = btn.style.color;
+  
+        btn.innerText = "✔"; 
+        btn.style.color = "#28a745";
+        btn.style.fontWeight = "bold";
+  
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.style.color = originalColor;
+          btn.style.fontWeight = "normal";
+        }, 3000);
+      });
     }
   </script>
   <br><br>

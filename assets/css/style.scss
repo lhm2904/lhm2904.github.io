@@ -1,31 +1,18 @@
----
-# This empty front matter might be needed if your file is an SCSS file processed by Jekyll.
-# If your file is already a plain .css and not processed, you can omit this.
-# However, if it has @import rules like yours, it's likely an SCSS file.
----
-
-// Keep these imports if they are necessary for your theme's functionality
-// (e.g., "fonts" might be for icon fonts or other specific font utilities,
-// "rouge-github" is for code syntax highlighting)
 @import "fonts";
 @import "rouge-github";
 
 body {
   background-color: #fff;
   padding: 50px;
-  /* MODIFIED: Changed font to Inter, using a good fallback stack */
-  /* Kept original font-size and line-height */
+
   font: 14px/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #727272;
-  font-weight: 400; /* Inter's Regular weight */
+  font-weight: 400; 
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   margin: 0 0 20px;
-  /* Headings will inherit "Inter" from the body. */
-  /* You can optionally set a specific weight if desired: */
-  /* font-weight: 700; */ /* Inter's Bold weight */
 }
 
 p, ul, ol, table, pre, dl {
@@ -51,12 +38,11 @@ h3, h4, h5, h6 {
 a {
   color: #267CB9;
   text-decoration: none;
-  /* Links will also inherit "Inter" */
 }
 
 a:hover, a:focus {
   color: #069;
-  font-weight: bold; /* Or you could use a specific Inter weight like 600 or 700 if preferred over generic 'bold' */
+  font-weight: bold; 
 }
 
 a small {
@@ -80,10 +66,8 @@ blockquote {
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
-  /* Blockquotes will inherit "Inter" */
 }
 
-/* Keep the original monospace font stack for code, as Inter is not suitable for code */
 code, pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
   color: #333;
@@ -129,14 +113,12 @@ kbd {
   box-shadow: inset 0 -1px 0 #959da5;
   color: #444d56;
   display: inline-block;
-  font-size: 11px; /* This will use Inter, which is fine for kbd tags */
+  font-size: 11px; 
   line-height: 10px;
   padding: 3px 5px;
   vertical-align: middle;
 }
 
-/* --- THE REST OF YOUR CSS REMAINS THE SAME --- */
-/* I'm including it for completeness but the font changes are above */
 
 header {
   width: 270px;
@@ -191,7 +173,7 @@ ul.downloads {
 
 strong {
   color: #222;
-  font-weight: 700; /* This will use Inter's Bold weight */
+  font-weight: 700; 
 }
 
 .downloads li + li + li {

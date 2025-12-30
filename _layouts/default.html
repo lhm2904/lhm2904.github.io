@@ -24,9 +24,20 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     </head>
   <body>
+    <button id="theme-toggle" onclick="toggleTheme()" style="
+      position: fixed; 
+      top: 20px; 
+      right: 20px; 
+      z-index: 1000; 
+      background: none; 
+      border: none; 
+      cursor: pointer; 
+      font-size: 24px;">
+      🌙
+    </button>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}" style="color: black;"}>{{ site.title | default: site.github.repository_name }}</a></h1>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
@@ -58,5 +69,29 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      function toggleTheme() {
+        const body = document.body;
+        const btn = document.getElementById("theme-toggle");
+        
+        // Toggle class
+        body.classList.toggle("dark-mode");
+    
+        // Update Icon and Save Preference
+        if (body.classList.contains("dark-mode")) {
+          localStorage.setItem("theme", "dark");
+          btn.innerText = "☀️"; // Switch icon to Sun
+        } else {
+          localStorage.setItem("theme", "light");
+          btn.innerText = "🌙"; // Switch icon to Moon
+        }
+      }
+    
+      // Check Local Storage on page load to apply preference
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        document.getElementById("theme-toggle").innerText = "☀️";
+      }
+    </script>
   </body>
 </html>

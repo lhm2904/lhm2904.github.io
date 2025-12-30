@@ -6,7 +6,12 @@ description: >
   <br><br>
   <span style="white-space: nowrap;">
     <strong>Email:</strong> <span id="email">minhlhoangvn@gmail.com</span>
-    <button id="copyBtn" onclick="copyEmail()" style="margin-left: 5px; transition: all 0.3s ease;">Copy</button>
+    <button id="copyBtn" onclick="copyEmail()" title="Copy email" style="margin-left: 5px; transition: all 0.3s ease; cursor: pointer; background: none; border: none; padding: 0; vertical-align: middle; color: inherit;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+    </button>
   </span>
   
   <script>
@@ -15,7 +20,7 @@ description: >
       const btn = document.getElementById("copyBtn");
       
       navigator.clipboard.writeText(emailText).then(() => {
-        const originalText = btn.innerText;
+        const originalContent = btn.innerHTML;
         const originalColor = btn.style.color;
   
         btn.innerText = "✔"; 
@@ -23,7 +28,7 @@ description: >
         btn.style.fontWeight = "bold";
   
         setTimeout(() => {
-          btn.innerText = originalText;
+          btn.innerHTML = originalContent;
           btn.style.color = originalColor;
           btn.style.fontWeight = "normal";
         }, 3000);
@@ -37,7 +42,7 @@ description: >
 
   
 theme: jekyll-theme-minimal
-google_analytics: G-XZ6GNVH6NF # your Google Analytics tracking ID here
+google_analytics: G-XZ6GNVH6NF
 
 colors:
   crimson: '#900C3F'

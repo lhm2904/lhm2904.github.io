@@ -4,8 +4,10 @@ description: >
   <br>
   International Business student at the University of Economics Ho Chi Minh City. This portfolio showcases my work as I transition into the field of data analytics.
   <br><br>
-  Email: <span id="email">minhlhoangvn@gmail.com</span>
-  <button id="copyBtn" onclick="copyEmail()" style="margin-left: 5px; transition: all 0.3s ease;">Copy</button>
+  <div style="white-space: nowrap;">
+    <strong>Email:</strong> <span id="email">minhlhoangvn@gmail.com</span>
+    <button id="copyBtn" onclick="copyEmail()" style="margin-left: 5px; transition: all 0.3s ease;">Copy</button>
+  </div>
   
   <script>
     function copyEmail() {

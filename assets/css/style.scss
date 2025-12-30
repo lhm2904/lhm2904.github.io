@@ -187,6 +187,16 @@ header {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: inherit; 
+  opacity: 0.8;
+}
+
 ul.downloads {
   list-style: none;
   height: 40px;

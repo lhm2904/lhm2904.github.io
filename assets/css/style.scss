@@ -6,17 +6,71 @@
 @import "fonts";
 @import "rouge-github";
 
-body {
-  background-color: #fff;
-  padding: 50px;
+:root {
+  --bg-color: #fff;
+  --text-color: #727272;
+  
+  --heading-primary: #222;
+  --heading-secondary: #393939;
+  --heading-tertiary: #494949;
+  
+  --link-color: #267CB9;
+  --link-hover: #069;
+  --link-small: #777;
+  
+  --border-color: #e5e5e5;
+  --code-bg: #f8f8f8;
+  
+  --download-bg: #f4f4f4;
+  --download-border: #e0e0e0;
+  --download-text: #676767;
+  --download-hover: #675C5C;
+  --download-active: #f0f0f0;
 
+  --kbd-bg: #fafbfc;
+  --kbd-border: #c6cbd1;
+  --kbd-text: #444d56;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #d4d4d4;
+  
+  --heading-primary: #ffffff;
+  --heading-secondary: #e0e0e0;
+  --heading-tertiary: #cccccc;
+  
+  --link-color: #58a6ff; 
+  --link-hover: #79c0ff;
+  --link-small: #a0a0a0;
+  
+  --border-color: #444444;
+  --code-bg: #2d2d2d;
+  
+  --download-bg: #252526;
+  --download-border: #3e3e42;
+  --download-text: #a0a0a0;
+  --download-hover: #ffffff;
+  --download-active: #333333;
+
+  --kbd-bg: #2d2d2d;
+  --kbd-border: #444;
+  --kbd-text: #d4d4d4;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  padding: 50px;
   font: 14px/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #727272;
-  font-weight: 400; 
+  color: var(--text-color);
+  font-weight: 400;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #222;
+  color: var(--heading-primary);
   margin: 0 0 20px;
 }
 
@@ -33,32 +87,32 @@ h1 {
 }
 
 h2 {
-  color: #393939;
+  color: var(--heading-secondary);
 }
 
 h3, h4, h5, h6 {
-  color: #494949;
+  color: var(--heading-tertiary);
 }
 
 a {
-  color: #267CB9;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #069;
+  color: var(--link-hover);
   font-weight: bold; 
 }
 
 a small {
   font-size: 11px;
-  color: #777;
+  color: var(--link-small);
   margin-top: -0.3em;
   display: block;
 }
 
 a:hover small {
-  color: #777;
+  color: var(--link-small);
 }
 
 .wrapper {
@@ -67,7 +121,7 @@ a:hover small {
 }
 
 blockquote {
-  border-left: 1px solid #e5e5e5;
+  border-left: 1px solid var(--border-color);
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
@@ -75,14 +129,14 @@ blockquote {
 
 code, pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color: #333;
+  color: var(--text-color);
 }
 
 pre {
   padding: 8px 15px;
-  background: #f8f8f8;
+  background: var(--code-bg);
   border-radius: 5px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--border-color);
   overflow-x: auto;
 }
 
@@ -94,16 +148,16 @@ table {
 th, td {
   text-align: left;
   padding: 5px 10px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--border-color);
 }
 
 dt {
-  color: #444;
+  color: var(--heading-tertiary);
   font-weight: 700;
 }
 
 th {
-  color: #444;
+  color: var(--heading-tertiary);
 }
 
 img {
@@ -112,12 +166,12 @@ img {
 }
 
 kbd {
-  background-color: #fafbfc;
-  border: 1px solid #c6cbd1;
-  border-bottom-color: #959da5;
+  background-color: var(--kbd-bg);
+  border: 1px solid var(--kbd-border);
+  border-bottom-color: var(--kbd-border);
   border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #959da5;
-  color: #444d56;
+  box-shadow: inset 0 -1px 0 var(--kbd-border);
+  color: var(--kbd-text);
   display: inline-block;
   font-size: 11px; 
   line-height: 10px;
@@ -137,16 +191,16 @@ ul.downloads {
   list-style: none;
   height: 40px;
   padding: 0;
-  background: #f4f4f4;
+  background: var(--download-bg);
   border-radius: 5px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--download-border);
   width: 270px;
 }
 
 .downloads li {
   width: 89px;
   float: left;
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid var(--download-border);
   height: 40px;
 }
 
@@ -161,7 +215,7 @@ ul.downloads {
 .downloads a {
   line-height: 1;
   font-size: 11px;
-  color: #676767;
+  color: var(--download-text);
   display: block;
   text-align: center;
   padding-top: 6px;
@@ -169,16 +223,16 @@ ul.downloads {
 }
 
 .downloads a:hover, .downloads a:focus {
-  color: #675C5C;
+  color: var(--download-hover);
   font-weight: bold;
 }
 
 .downloads ul a:active {
-  background-color: #f0f0f0;
+  background-color: var(--download-active);
 }
 
 strong {
-  color: #222;
+  color: var(--heading-primary);
   font-weight: 700; 
 }
 
@@ -190,7 +244,7 @@ strong {
 .downloads a strong {
   font-size: 14px;
   display: block;
-  color: #222;
+  color: var(--heading-primary);
 }
 
 section {
@@ -205,7 +259,7 @@ small {
 
 hr {
   border: 0;
-  background: #e5e5e5;
+  background: var(--border-color);
   height: 1px;
   margin: 0 0 20px;
 }
@@ -236,7 +290,7 @@ footer {
   }
 
   section {
-    border: 1px solid #e5e5e5;
+    border: 1px solid var(--border-color);
     border-width: 1px 0;
     padding: 20px 0;
     margin: 0 0 20px;
